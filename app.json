@@ -6,6 +6,7 @@
     "env": {
         "SECRET_KEY": {
             "generator": "secret"
-        }
+        },
+        "BUILDPACK_URL": "https://github.com/cirlabs/heroku-buildpack-geodjango/"
     }
 }
