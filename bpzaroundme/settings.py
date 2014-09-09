@@ -49,11 +49,12 @@ DATABASES = {
         default='postgis://bpzaroundme@/bpzaroundme'),
     # Equivalent to:
     # 'default': {
-    #     'ENGINE': 'django.contrib.gid.db.backends.postgis',
+    #     'ENGINE': 'django.contrib.gis.db.backends.postgis',
     #     'NAME': 'bpzaroundme',
     #     'USER': 'bpzaroundme',
     # }
 }
+DATABASES['default']['ENGINE'] = 'django.contrib.gis.db.backends.postgis' 
 
 # Hosts/domain names that are valid for this site; required if DEBUG is False
 # See https://docs.djangoproject.com/en/1.5/ref/settings/#allowed-hosts
